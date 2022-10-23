@@ -3,11 +3,11 @@
 #include<unistd.h>
 int main ()
 {
-    char n1[20],p1[15],n2[20],p2[15];
+    char n1[14],p1[12],n2[14],p2[12];
     clrscr();
     printf("\n .................... The GAME Zone .................... ");
     
-    printf("\n \n \n * You have to create new account, every time whenever you enter this GAME Zone. \n * Remember user name size must be only 10 and password size must be only 6 digit or character long. \n * Please do not insert spaces between user name & password.");
+    printf("\n \n \n * You have to create new account, every time whenever you enter this GAME Zone. \n * Remember user name size must be only 8 and password size must be only 6 digit or character long. \n * Please do not insert spaces between user name & password.");
     
     printf("\n \n Create your user name: ");
     scanf("%s",&n1);
@@ -21,7 +21,8 @@ int main ()
     printf("\n Enter your password: ");
     scanf("%s",p2);
     
-    if ( n1[0]=n2[0] && n1[1]==n2[1] && n1[2]==n2[2] && n1[3]==n2[3] && n1[4]==n2[4] && n1[5]==n2[5] & n1[6]==n2[6] && n1[7]==n2[7] && n1[8]==n2[8] && n1[9]==n2[9] && p1[0]==p2[0] && p1[1]==p2[1] && p1[2]==p2[2] && p1[3]==p2[3] && p1[4]==p2[4] && p1[5]==p2[5] )
+    if( n1[0]==n2[0] && n1[1]==n2[1] && n1[2]==n2[2] && n1[3]==n2[3] && n1[4]==n2[4]
+     && n1[5]==n2[5] && n1[6]==n2[6] && n1[7]==n2[7] && p1[0]==p2[0] && p1[1]==p2[1] && p1[2]==p2[2] && p1[3]==p2[3] && p1[4]==p2[4] && p1[5]==p2[5])
      
     {
         home1:
@@ -37,14 +38,10 @@ int main ()
         game1:
         printf("\n \n \n * Select the game, Which you want to play:  ");
         scanf("%d",&g1);
-        if(g1==4)
+        
+      if(g1==1)
         {
-            printf("\n Exiting the GAME Zone...");
-            printf("\n");
-            sleep(2);
-            exit(0);
-        }
-        printf("\n \n Game is starting.....");
+            printf("\n \n Game is starting.....");
         printf("\n");
         sleep(3);
         clrscr();
@@ -60,8 +57,6 @@ int main ()
         printf("\n");
         sleep(1);
         clrscr();
-        if(g1==1)
-        {
     res1:
     clrscr();
     printf("\n .................... KBC .................... ");
@@ -111,6 +106,7 @@ int main ()
 
         if (quite == 1)
         {
+            kw1:
             printf("\n Going to the home page...");
             printf("\n");
             sleep(1);
@@ -119,6 +115,7 @@ int main ()
 
         else if (quite == 2)
         {
+            kw2:
             printf("\n Restarting the game...");
             printf("\n");
             sleep(1);
@@ -134,6 +131,24 @@ int main ()
     else
     {
         printf("\n Wrong option... correct option is A) .c");
+        printf("\n The KBC game is ower. Do you want to play this game again? \n Enter '1' to go to the game page.. \n Enter '2' to play again.");
+       int kw;
+         kw3:
+        printf("\n Enter option:");
+        scanf("%d",&kw);
+        if(kw==1)
+        {
+            goto kw1;
+        }
+        else if(kw==2)
+        {
+            goto kw2;
+        }
+        else
+        {
+            printf("\n Invalid Option... Please enter valid option.");
+            goto kw3; 
+        }
         
     }
 
@@ -182,6 +197,23 @@ int main ()
             else
             {
                 printf("\n Wrong option... correct answer is B) sql");
+                printf("\n The KBC game is ower. Do you want to play this game again? \n Enter '1' to go to the game page.. \n Enter '2' to play again.");
+       int kw;
+        printf("\n Enter option:");
+        scanf("%d",&kw);
+        if(kw==1)
+        {
+            goto kw1;
+        }
+        else if(kw==2)
+        {
+            goto kw2;
+        }
+        else
+        {
+            printf("\n Invalid Option... Please enter valid option.");
+            goto kw3; 
+        }
                 
             }
         
@@ -231,6 +263,23 @@ else if (op1 == '0')
     else
     {
         printf("\n Wrong option... correct option is A) case sensitive");
+        printf("\n The KBC game is ower. Do you want to play this game again? \n Enter '1' to go to the game page.. \n Enter '2' to play again.");
+       int kw;
+        printf("\n Enter option:");
+        scanf("%d",&kw);
+        if(kw==1)
+        {
+            goto kw1;
+        }
+        else if(kw==2)
+        {
+            goto kw2;
+        }
+        else
+        {
+            printf("\n Invalid Option... Please enter valid option.");
+            goto kw3; 
+        }
         
     }
     
@@ -277,6 +326,23 @@ else if (op1 == '0')
     else
     {
         printf("\n Wrong option... correct option is C) Mozilla Firefox");
+        printf("\n The KBC game is ower. Do you want to play this game again? \n Enter '1' to go to the game page.. \n Enter '2' to play again.");
+       int kw;
+        printf("\n Enter option:");
+        scanf("%d",&kw);
+        if(kw==1)
+        {
+            goto kw1;
+        }
+        else if(kw==2)
+        {
+            goto kw2;
+        }
+        else
+        {
+            printf("\n Invalid Option... Please enter valid option.");
+            goto kw3; 
+        }
         
     }
     
@@ -323,6 +389,23 @@ else if (op1 == '0')
     else
     {
         printf("\n Wrong option... correct option is C) <stdio.h>");
+        printf("\n The KBC game is ower. Do you want to play this game again? \n Enter '1' to go to the game page.. \n Enter '2' to play again.");
+       int kw;
+        printf("\n Enter option:");
+        scanf("%d",&kw);
+        if(kw==1)
+        {
+            goto kw1;
+        }
+        else if(kw==2)
+        {
+            goto kw2;
+        }
+        else
+        {
+            printf("\n Invalid Option... Please enter valid option.");
+            goto kw3; 
+        }
         
     }
     
@@ -369,6 +452,23 @@ else if (op1 == '0')
     else
     {
         printf("\n Wrong option... correct option is A) c, c++, java");
+        printf("\n The KBC game is ower. Do you want to play this game again? \n Enter '1' to go to the game page.. \n Enter '2' to play again.");
+       int kw;
+        printf("\n Enter option:");
+        scanf("%d",&kw);
+        if(kw==1)
+        {
+            goto kw1;
+        }
+        else if(kw==2)
+        {
+            goto kw2;
+        }
+        else
+        {
+            printf("\n Invalid Option... Please enter valid option.");
+            goto kw3; 
+        }
       
     }
     
@@ -415,6 +515,23 @@ else if (op1 == '0')
     else
     {
         printf("\n Wrong option... correct option is C) .mpz");
+        printf("\n The KBC game is ower. Do you want to play this game again? \n Enter '1' to go to the game page.. \n Enter '2' to play again.");
+       int kw;
+        printf("\n Enter option:");
+        scanf("%d",&kw);
+        if(kw==1)
+        {
+            goto kw1;
+        }
+        else if(kw==2)
+        {
+            goto kw2;
+        }
+        else
+        {
+            printf("\n Invalid Option... Please enter valid option.");
+            goto kw3; 
+        }
         
     }
     
@@ -461,7 +578,23 @@ else if (op1 == '0')
     else
     {
         printf("\n Wrong option... correct option is A) .deb");
-        
+        printf("\n The KBC game is ower. Do you want to play this game again? \n Enter '1' to go to the game page.. \n Enter '2' to play again.");
+       int kw;
+        printf("\n Enter option:");
+        scanf("%d",&kw);
+        if(kw==1)
+        {
+            goto kw1;
+        }
+        else if(kw==2)
+        {
+            goto kw2;
+        }
+        else
+        {
+            printf("\n Invalid Option... Please enter valid option.");
+            goto kw3; 
+        }
     }
     
     printf("\n \n \nQ.9 What is the full form of ADB command?");
@@ -507,7 +640,23 @@ else if (op1 == '0')
     else
     {
         printf("\n Wrong option... correct option is D) Android Debug Bridge");
-        
+        printf("\n The KBC game is ower. Do you want to play this game again? \n Enter '1' to go to the game page.. \n Enter '2' to play again.");
+       int kw;
+        printf("\n Enter option:");
+        scanf("%d",&kw);
+        if(kw==1)
+        {
+            goto kw1;
+        }
+        else if(kw==2)
+        {
+            goto kw2;
+        }
+        else
+        {
+            printf("\n Invalid Option... Please enter valid option.");
+            goto kw3; 
+        }
     }
     
     printf("\n \n \nQ.10 which of these is right statement according to clone repository from Github in any command-line?");
@@ -553,6 +702,23 @@ else if (op1 == '0')
     else
     {
         printf("\n Wrong option... correct option is A) git clone https://github.com/user_name/repository_name.git");
+        printf("\n The KBC game is ower. Do you want to play this game again? \n Enter '1' to go to the game page.. \n Enter '2' to play again.");
+       int kw;
+        printf("\n Enter option:");
+        scanf("%d",&kw);
+        if(kw==1)
+        {
+            goto kw1;
+        }
+        else if(kw==2)
+        {
+            goto kw2;
+        }
+        else
+        {
+            printf("\n Invalid Option... Please enter valid option.");
+            goto kw3; 
+        }
     }
     
     
@@ -569,7 +735,7 @@ else if (op1 == '0')
     }
     else if(ower1=='n')
     {
-        printf('\n Going to the game page...');
+        printf("\n Going to the game page...");
         printf("\n");
         sleep(2);
         goto home1;
@@ -579,6 +745,22 @@ else if (op1 == '0')
         
         else if(g1==2)
         {
+          printf("\n \n Game is starting.....");
+        printf("\n");
+        sleep(3);
+        clrscr();
+        printf("\n %50d",3);
+        printf("\n");
+        sleep(1);
+        clrscr();
+        printf("\n %50d",2);
+        printf("\n");
+        sleep(1);
+        clrscr();
+        printf("\n %50d",1);
+        printf("\n");
+        sleep(1);
+        clrscr();
           res2:
           clrscr();
           printf("\n .................... MATRIX .................... ");
@@ -793,6 +975,7 @@ else if (op1 == '0')
                   }
                   
               }
+              goto qt1;
               
               
       }
@@ -999,7 +1182,7 @@ else if (op1 == '0')
                   }
                   
               }
-              
+              goto qt1;
               
       }
       
