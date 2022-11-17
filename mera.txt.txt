@@ -1,0 +1,35 @@
+create table students
+(no number primary key,
+name varchar2(10),
+school varchar2(20),
+hobby varchar2(20),
+std number(2),
+gender char)
+
+insert all
+into students values(1,'Ajit','Xavier','Dance',5,'M')
+into students values(2,'Alisha','Sharda','Singing',5,'F')
+into students values(3,'Pratixa','Aone','Cricket',5,'F')
+into students values(4,'Deepam','HBK','Painting',6,'F')
+into students values(5,'Nisha','Santkabir','Cricket',7,'F')
+into students values(6,'Anya','Xavier','Singing',6,'F')
+into students values(7,'Raj','Aone','Painting',6,'M')
+into students values(8,'Monish','Sharda','Karate',6,'M')
+into students values(9,'Ram','Aone','Dance',6,'M')
+into students values(10,'Shyam','Santkabir','Singing',6,'M')
+into students values(11,'Kavisha','Xavier','Swimming',7,'F')
+into students values(12,'Nayan','Aone','Cricket',7,'M')
+into students values(13,'Meet','Somlalit','Cricket',7,'M')
+into students values(14,'Urvi','Sharda','Dance',7,'F')
+into students values(15,'Kunj','Xavier','Singing',8,'M')
+select * from dual;
+
+select * from students
+
+select name, school, std from students
+
+select * from students where school='Sharda'
+
+select * from students where name like 'R%' ;
+
+select name from students where name like 'A%' like 'E%';
