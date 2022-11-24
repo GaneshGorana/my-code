@@ -30,6 +30,23 @@ select name, school, std from students
 
 select * from students where school='Sharda'
 
-select * from students where name like 'R%' ;
+select * from students whererder by school  select no from students order by no desc;
 
-select name from students where name like 'A%' like 'E%';
+select count(no) from students
+
+alter table students add(math number(3), sci number(3), eng number(3), fees number(10));
+
+update students set fees=8000 where std=8;
+
+update students set math=47 where std=8
+
+update students set sci=50 where std=8
+
+update students set eng=33 where std=8
+
+select count(name) from students where gender='M'
+select count(name) from students where gender='F'
+
+select name from students where gender='M' AND school='Sharda'
+
+select * from students where hobby='Cricket' AND school='Somlalit'
